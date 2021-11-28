@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int n,suma,srednia,pkt;
+ cout << "Podaj liczbe studentow :";
+ cin >> n;
+ int i=0;
+ while(true){
+    cout<<"Podaj liczbe: ";
+    cin>>pkt;
+    if(pkt>0 && pkt<100){
+        suma=suma+pkt;
+        i++;
+    }
+    else{
+        continue;
+    }
+    if(i==n){
+        break;
+    }
+ }
+    srednia=suma/n;
+    cout<<"Srednia pkt studentow : "<<srednia;
+}
