@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int n,suma,srednia,pkt;
+ cout << "Podaj liczbe studentow :";
+ cin >> n;
+ int i=0;
+while(i<n){
+	cout<<"Podaj liczbe pkt: ";
+	cin>>pkt;
+	suma+=pkt;
+	i+=1;
+}
+	srednia=suma/n;
+	cout<<"Srednia pkt studentow :"<<srednia;
+}
