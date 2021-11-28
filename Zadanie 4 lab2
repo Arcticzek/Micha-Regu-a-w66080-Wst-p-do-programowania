@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+
+{
+    int liczba, sd = 0, su=0, ileu = 0, iled = 0;
+    for(int i=0;i<10;i++)
+    {
+        cout << "Podaj liczbe: ";
+         cin >> liczba;
+        if (liczba >= 0) {
+            iled++;
+            sd += liczba;
+        }
+        else {
+            ileu++;
+            su += liczba;
+        }
+
+    }
+    cout << "Ilosc liczb dodatnich:" << iled << ", suma: " << sd << endl;
+    cout << "Ilosc liczb ujemnych:" << ileu << ", suma: " << su << endl;
+}
